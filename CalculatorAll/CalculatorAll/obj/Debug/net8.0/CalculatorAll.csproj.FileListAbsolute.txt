@@ -364,4 +364,5 @@ C:\Users\sogoo\Desktop\GitHub\Calculator\CalculatorAll\CalculatorAll\bin\Debug\n
 C:\Users\sogoo\Desktop\GitHub\Calculator\CalculatorAll\CalculatorAll\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\sogoo\Desktop\GitHub\Calculator\CalculatorAll\CalculatorAll\obj\Debug\net8.0\CalculatorAll.csproj.AssemblyReference.cache
 C:\Users\sogoo\Desktop\GitHub\Calculator\CalculatorAll\CalculatorAll\obj\Debug\net8.0\CalculatorAll.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\sogoo\Desktop\GitHub\Calculator\CalculatorAll\CalculatorAll\obj\Debug\net8.0\CalculatorAll.csproj.CopyComplete
+C:\Users\sogoo\Desktop\GitHub\Calculator\CalculatorAll\CalculatorAll\obj\Debug\net8.0\CalculatorAll.sourcelink.json
+C:\Users\sogoo\Desktop\GitHub\Calculator\CalculatorAll\CalculatorAll\obj\Debug\net8.0\Calculat.A2E47A1D.Up2Date

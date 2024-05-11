@@ -6,7 +6,7 @@
 @section Styles {
 
 	<style type="text/css">
-		@@import url('https://fonts.googleapis.com/css?family=Poppins:wght@500&display=swap');
+		@@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 		* {
 			margin: 0;
@@ -17,89 +17,116 @@
 
 		body {
 			width: 100%;
-			height: 100vh;
-			display: flex;
+			/*height: 100vh;*/
+			/*display: flex;*/
 			justify-content: center;
 			align-items: center;
 			background: linear-gradient(45deg, #1e212d, #283c63);
 		}
 
-		.calculator-container {
-			height: 100vh;
+		.calculator {
+			border: 1px solid #8a97a6;
+			padding: 20px;
+			border-radius: 16px;
+			background: #2f3640;
+			box-shadow: 0px 3px 15px rgba(42, 46, 54, 0.8);
+		}
+
+		input {
+			width: 320px;
+			border: none;
+			padding: 24px;
+			margin: 10px;
+			background: #404854;
+			box-shadow: 0px 3px 15px rgba(64, 72, 84, 0.2);
+			font-size: 40px;
+			text-align: right;
+			color: #dfe6e9;
+		}
+
+			input::placeholder {
+				color: #b2bec3;
+			}
+
+		button {
+				border: none;
+				width: 60px;
+				height: 60px;
+				margin: 10px;
+				border-radius: 50%;
+				background: #556270;
+				color: #f5f6fa;
+				font-size: 20px;
+				box-shadow: 0px 8px 15px rgba(85, 98, 112, 0.6);
+				cursor: pointer;
+				transition: all 0.3s ease;
+		}
+
+		button:hover {
+				box-shadow: 0px 12px 20px rgba(85, 98, 112, 0.8);
+				transform: translateY(-2px);
+		}
+
+		.equalBtn {
+				background-color: #00a8ff;
+				box-shadow: 0px 10px 20px rgba(0, 168, 255, 0.6);
+		}
+
+			.equalBtn:hover {
+				box-shadow: 0px 12px 20px rgba(0, 168, 255, 0.6);
+				transform: translateY(-2px);
+			}
+
+		.operator {
+			color: #00b894;
+		}
+
+		.cal-container {
 			display: flex;
 			justify-content: center;
-			align-items: center;
 		}
 
-		.Calculator {
-			background-color: #ecf0f3;
-			padding: 15px;
-			border-radius: 30px;
-			box-shadow: inset 5px 5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
-			display: grid;
-			grid-template-columns: repeat(4, 68px);
+		.container-wrap {
+			width: 100%;
 		}
 
-			.Calculator input {
-				grid-column: span 4;
-				height: 70px;
-				width: 260px;
-				background-color: #ecf0f3;
-				box-shadow: inset -5px -5px 12px #ffffff, inset 5px 5px 12px rgba(0, 0, 0, 0.16);
-				border: none;
-				border-radius: 30px;
-				color: rgba(70, 70, 70);
-				font-size: 50px;
-				text-align: end;
-				margin: auto;
-				margin-top: 40px;
-				margin-bottom: 30px;
-				padding: 20px;
-			}
-
-			.Calculator button {
-				height: 48px;
-				width: 48px;
-				background-color: #ecf0f3;
-				box-shadow: -5px -5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
-				border: none;
-				border-radius: 50%;
-				margin: 8px;
-				font-size: 16px;
-			}
-
-			.Calculator .equal {
-				width: 115px;
-				border-radius: 40px;
-				background-color: #ecf0f3;
-				box-shadow: -5px -5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
-			}
 	</style>
 }
 
-<div class="container">
-	<div class="calculator-container">
-		<div class="Calculator">
-			<input type="text" placeholder="0" id="outputScreen" />
-			<button onclick="Clear()">Cl</button>
-			<button onclick="del()">DEL</button>
-			<button onclick="display('%')">%</button>
-			<button onclick="display('/')">/</button>
-			<button onclick="display('7')">7</button>
-			<button onclick="display('8')">8</button>
-			<button onclick="display('9')">9</button>
-			<button onclick="display('*')">*</button>
-			<button onclick="display('4')">4</button>
-			<button onclick="display('5')">5</button>
-			<button onclick="display('6')">6</button>
-			<button onclick="display('-')">-</button>
-			<button onclick="display('1')">1</button>
-			<button onclick="display('2')">2</button>
-			<button onclick="display('3')">3</button>
-			<button onclick="display('+')">+</button>
-			<button onclick="display('.')">.</button>
-			<button onclick="display('0')">0</button>
-			<button onclick="Calculate()" class="equal">=</button>
+<div class="container-fluid">
+	<div class="cal-container">
+		<div class="calculator">
+			<input type="text" placeholder="0" id="inputBox" />
+			<div>
+				<button class="button operator">AC</button>
+				<button class="button operator">DEL</button>
+				<button class="button operator">%</button>
+				<button class="button operator">/</button>
+			</div>
+			<div>
+				<button class="button">7</button>
+				<button class="button">8</button>
+				<button class="button">9</button>
+				<button class="button operator">*</button>
+			</div>
+			<div>
+				<button class="button">4</button>
+				<button class="button">5</button>
+				<button class="button">6</button>
+				<button class="button operator">-</button>
+			</div>
+			<div>
+				<button class="button">1</button>
+				<button class="button">2</button>
+				<button class="button">3</button>
+				<button class="button operator">+</button>
+			</div>
+			<div>
+				<button class="button">00</button>
+				<button class="button">0</button>
+				<button class="button">.</button>
+				<button class="button equalBtn">=</button>
+			</div>
 		</div>
 	</div>
 </div>
@@ -108,23 +135,31 @@
 
 	<script type="text/javascript">
 
-		let outputScreen = document.getElementById("outputScreen");
-		function display(num) {
-			outputScreen.value += num;
-		}
-		function Calculate() {
-			try {
-				outputScreen.value = eval(outputScreen.value);
-			} catch (err) {
-				alert("Invalid");
-			}
-		}
-		function Clear() {
-			outputScreen.value = "";
-		}
-		function del() {
-			outputScreen.value = outputScreen.value.slice(0, -1);
-		}
+		let input = document.getElementById("inputBox");
+		let buttons = document.querySelectorAll("button");
+
+		let string = "";
+		let arr = Array.from(buttons);
+		arr.forEach(button => {
+			button.addEventListener('click', (e) => {
+				if (e.target.innerHTML == '=') {
+					string = eval(string);
+					input.value = string;
+				}
+				else if (e.target.innerHTML == 'AC') {
+					string = "";
+					input.value = string;
+				}
+				else if (e.target.innerHTML == 'DEL') {
+					string = string.substring(0, string.length - 1);
+					input.value = string;
+				}
+				else {
+					string += e.target.innerHTML;
+					input.value = string;
+				}
+			})
+		})
 
 	</script>
 }
