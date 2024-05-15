@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\sogoo\\Desktop\\GitHub\\Calculator\\CalculatorAll\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{ED0EA68D-63EB-47F9-8A47-052DA20210BA}|CalculatorAll\\CalculatorAll.csproj|c:\\users\\sogoo\\desktop\\github\\calculator\\calculatorall\\calculatorall\\views\\home\\calculator10.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED0EA68D-63EB-47F9-8A47-052DA20210BA}|CalculatorAll\\CalculatorAll.csproj|solutionrelative:calculatorall\\views\\home\\calculator10.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ED0EA68D-63EB-47F9-8A47-052DA20210BA}|CalculatorAll\\CalculatorAll.csproj|c:\\users\\sogoo\\desktop\\github\\calculator\\calculatorall\\calculatorall\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ED0EA68D-63EB-47F9-8A47-052DA20210BA}|CalculatorAll\\CalculatorAll.csproj|solutionrelative:calculatorall\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,31 +45,44 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Calculator10.cshtml",
+              "DocumentMoniker": "C:\\Users\\sogoo\\Desktop\\GitHub\\Calculator\\CalculatorAll\\CalculatorAll\\Views\\Home\\Calculator10.cshtml",
+              "RelativeDocumentMoniker": "CalculatorAll\\Views\\Home\\Calculator10.cshtml",
+              "ToolTip": "C:\\Users\\sogoo\\Desktop\\GitHub\\Calculator\\CalculatorAll\\CalculatorAll\\Views\\Home\\Calculator10.cshtml",
+              "RelativeToolTip": "CalculatorAll\\Views\\Home\\Calculator10.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-12T18:06:18.883Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\sogoo\\Desktop\\GitHub\\Calculator\\CalculatorAll\\CalculatorAll\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "CalculatorAll\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\sogoo\\Desktop\\GitHub\\Calculator\\CalculatorAll\\CalculatorAll\\Controllers\\HomeController.cs",
               "RelativeToolTip": "CalculatorAll\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAkwDwAAAApAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAQwFAAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-09T17:56:28.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\sogoo\\Desktop\\GitHub\\Calculator\\CalculatorAll\\CalculatorAll\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "CalculatorAll\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\sogoo\\Desktop\\GitHub\\Calculator\\CalculatorAll\\CalculatorAll\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "CalculatorAll\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAADcAAABBAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAAowEMAAABfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-09T17:09:13.005Z",
               "EditorCaption": ""

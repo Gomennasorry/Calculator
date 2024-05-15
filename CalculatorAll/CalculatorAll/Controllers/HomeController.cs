@@ -63,6 +63,26 @@ namespace CalculatorAll.Controllers
             return View();
         }
 
+        public IActionResult Calculator09()
+        {
+            return View();
+        }
+
+        public IActionResult Calculator10()
+        {
+            return View();
+        }
+
+        public IActionResult Calculator11()
+        {
+            return View();
+        }
+
+        public IActionResult Calculator12()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

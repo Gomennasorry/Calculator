@@ -1,0 +1,142 @@
+﻿@*
+	For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@section Styles {
+
+	<style type="text/css">
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			/*height: 100vh;*/
+			width: 100%;
+			/*display: flex;*/
+			/*justify-content: center;*/
+			/*align-items: center;*/
+		}
+
+		.calculator {
+			box-shadow: inset -9px -9px 18px #5a5a5a, inset 9px 9px 18px #ffffff;
+			border-radius: 20px;
+			padding: 10px;
+			height: 420px;
+			background-color: #e0e0e0;
+			width: 250px;
+		}
+
+		input {
+			text-align: right;
+			font-weight: 800;
+			color: red;
+			font-size: 30px;
+			border-radius: 20px;
+			border: none;
+			background: #e0e0e0;
+			box-shadow: inset 5px 5px 10px #5a5a5a, inset -5px -5px 10px #ffffff;
+			width: 100%;
+			height: 80px;
+			padding: 20px;
+		}
+
+		button {
+			font-size: 18px;
+			border: none;
+			background: #e0e0e0;
+			box-shadow: inset -5px -5px 10px #5a5a5a, inset 5px 5px 10px #ffffff;
+			margin-top: 10px;
+			height: 54px;
+			width: 54px;
+			border-radius: 50%;
+		}
+
+		.operators {
+			color: red;
+			font-size: 20px;
+			font-weight: 700;
+		}
+
+		.equalBtn {
+			color: orangered;
+		}
+
+		.cal08-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+	</style>
+}
+
+<div class="cal08-container">
+	<div class="calculator">
+		<input type="text" placeholder="0" id="inputBox" />
+		<div>
+			<button class="operators">C</button>
+			<button class="operators">x</button>
+			<button class="operators">%</button>
+			<button class="operators">/</button>
+		</div>
+		<div>
+			<button>1</button>
+			<button>2</button>
+			<button>3</button>
+			<button class="operators">*</button>
+		</div>
+		<div>
+			<button>4</button>
+			<button>5</button>
+			<button>6</button>
+			<button class="operators">-</button>
+		</div>
+		<div>
+			<button>7</button>
+			<button>8</button>
+			<button>9</button>
+			<button class="operators">+</button>
+		</div>
+		<div>
+			<button>0</button>
+			<button>00</button>
+			<button class="operators">.</button>
+			<button class="equalBtn">=</button>
+		</div>
+	</div>
+</div>
+
+@section Scripts {
+
+	<script type="text/javascript">
+
+		let input = document.getElementById("inputBox");
+		let buttons = document.querySelectorAll("button");
+		let buttonsArray = Array.from(buttons);
+		let string = "";
+
+		buttonsArray.forEach((btn) => {
+			btn.addEventListener("click", (e) => {
+				if (e.target.innerHTML == "x") {
+					string = string.substring(0, string.length - 1);
+					input.value = string;
+				} else if (e.target.innerHTML == "C") {
+					string = "";
+					input.value = string;
+				} else if (e.target.innerHTML == "=") {
+					string = eval(string);
+					input.value = string;
+				} else {
+					string += e.target.innerHTML;
+					input.value = string;
+				}
+			});
+		});
+
+
+	</script>
+}
